@@ -16,3 +16,6 @@
 [submodule "git/mindbender-core"]
 	path = git/mindbender-core
 	url = https://github.com/mindbender-studio/core.git
+[submodule "git/mindbender-example"]
+	path = git/mindbender-example
+	url = https://github.com/mindbender-studio/example.git
