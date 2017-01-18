@@ -19,3 +19,6 @@
 [submodule "git/mindbender-example"]
 	path = git/mindbender-example
 	url = https://github.com/mindbender-studio/example.git
+[submodule "git/pyblish-lite"]
+	path = git/pyblish-lite
+	url = https://github.com/pyblish/pyblish-lite.git
