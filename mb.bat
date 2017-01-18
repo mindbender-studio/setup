@@ -13,7 +13,7 @@ set PYBLISH_QML=%~dp0git\pyblish-qml
 set PYBLISH_LITE=%~dp0git\pyblish-lite
 set MINDBENDER_CORE=%~dp0git\mindbender-core
 set REPLACE_ME=%~dp0git\mindbender-example\projects
-set MBBAT=%~dp0mindbender-core\bin\_mb.bat
+set MBBAT=%~dp0git\mindbender-core\bin\_mb.bat
 
 :: ---------------------------------------------------------
 ::
