@@ -1,0 +1,18 @@
+[submodule "git/pyblish-base"]
+	path = git/pyblish-base
+	url = https://github.com/pyblish/pyblish-base.git
+[submodule "git/pyblish-maya"]
+	path = git/pyblish-maya
+	url = https://github.com/pyblish/pyblish-maya.git
+[submodule "git/pyblish-houdini"]
+	path = git/pyblish-houdini
+	url = https://github.com/pyblish/pyblish-houdini.git
+[submodule "git/pyblish-nuke"]
+	path = git/pyblish-nuke
+	url = https://github.com/pyblish/pyblish-nuke.git
+[submodule "git/pyblish-qml"]
+	path = git/pyblish-qml
+	url = https://github.com/pyblish/pyblish-qml.git
+[submodule "git/mindbender-core"]
+	path = git/mindbender-core
+	url = https://github.com/mindbender-studio/core.git
