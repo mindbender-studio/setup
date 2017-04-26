@@ -1,5 +1,4 @@
 *.qmlc
 *.jsc
-*.bat
 *.pyc
 __pycache__/
