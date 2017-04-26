@@ -17,4 +17,12 @@ set PATH=%~dp0bin;%PATH%
 
 set PYTHONPATH=%MINDBENDER_LAUNCHER%;%PYTHONPATH%
 
-python36 -u -m launcher --root %MINDBENDER_EXAMPLE%
+:: ---------------------------------------------------------
+::
+:: Edit here
+::
+:: ---------------------------------------------------------
+
+if "%MINDBENDER_PROJECTS%"=="" set MINDBENDER_PROJECTS=%MINDBENDER_EXAMPLE%
+
+python36 -u -m launcher --root %MINDBENDER_PROJECTS%

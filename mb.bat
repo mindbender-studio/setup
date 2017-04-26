@@ -12,7 +12,7 @@ set PYBLISH_NUKE=%~dp0git\pyblish-nuke
 set PYBLISH_QML=%~dp0git\pyblish-qml
 set PYBLISH_LITE=%~dp0git\pyblish-lite
 set MINDBENDER_CORE=%~dp0git\mindbender-core
-set REPLACE_ME=%~dp0git\mindbender-example\projects
+set MINDBENDER_PROJECTS=%~dp0git\mindbender-example\projects
 set MBBAT=%~dp0git\mindbender-core\bin\_mb.bat
 
 :: ---------------------------------------------------------
@@ -21,5 +21,7 @@ set MBBAT=%~dp0git\mindbender-core\bin\_mb.bat
 ::
 :: ---------------------------------------------------------
 
-:: Replace "%REPLACE_ME%" with e.g. "m:\f03_projects"
-call %MBBAT% %REPLACE_ME% %*
+if "%MINDBENDER_PROJECTS%"=="" set MINDBENDER_PROJECTS=%MINDBENDER_EXAMPLE%
+
+:: Replace "%MINDBENDER_PROJECTS%" with e.g. "m:\f03_projects"
+call %MBBAT% %MINDBENDER_PROJECTS% %*
