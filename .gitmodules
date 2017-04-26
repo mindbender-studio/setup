@@ -22,3 +22,6 @@
 [submodule "git/pyblish-lite"]
 	path = git/pyblish-lite
 	url = https://github.com/pyblish/pyblish-lite.git
+[submodule "git/mindbender-launcher"]
+	path = git/mindbender-launcher
+	url = https://github.com/mottosso/launcher.git
