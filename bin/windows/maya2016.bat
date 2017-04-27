@@ -1,13 +1,13 @@
 @echo off
 
-:: if user doesn't have app installed
-if not exist "c:\program files\autodesk\maya2016\bin\maya.exe" goto :missing_app
+set __app__="Maya 2016"
+set __exe__="c:\program files\autodesk\maya2016\bin\maya.exe"
+if not exist %__exe__% goto :missing_app
 
-echo Launching Maya @ %MINDBENDER_WORKDIR%..
-start "Maya" "c:\program files\autodesk\maya2016\bin\maya.exe" %*
+start %__app__% %__exe__% %*
 
 goto :eof
 
 :missing_app
-    echo ERROR: Maya not found
+    echo ERROR: %__app__% not found in %__exe__%
     exit /B 1
