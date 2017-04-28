@@ -17,12 +17,14 @@ set PATH=%~dp0bin;%PATH%
 
 set PYTHONPATH=%MINDBENDER_LAUNCHER%;%PYTHONPATH%
 
+if "%MINDBENDER_PROJECTS%"=="" set MINDBENDER_PROJECTS=%MINDBENDER_EXAMPLE%
+
 :: ---------------------------------------------------------
 ::
 :: Edit here
 ::
 :: ---------------------------------------------------------
 
-if "%MINDBENDER_PROJECTS%"=="" set MINDBENDER_PROJECTS=%MINDBENDER_EXAMPLE%
+set PYBLISHGUI=pyblish_qml
 
 python -u -m launcher --root %MINDBENDER_PROJECTS%
