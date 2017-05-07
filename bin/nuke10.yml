@@ -1,5 +1,0 @@
-schema: mindbender-core:application-1.0
-
-label: "The Foundry Nuke 10.0"
-application_dir: "nuke"
-executable: "Nuke10.0"
