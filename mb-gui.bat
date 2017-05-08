@@ -15,6 +15,7 @@ set PATH=%~dp0bin\windows\python36;%PATH%
 set PATH=%~dp0bin\windows;%PATH%
 set PATH=%~dp0bin;%PATH%
 
+set PYTHONPATH=%~dp0bin\maya\2016\pythonpath
 set PYTHONPATH=%MINDBENDER_LAUNCHER%;%PYTHONPATH%
 
 if "%MINDBENDER_PROJECTS%"=="" set MINDBENDER_PROJECTS=%MINDBENDER_EXAMPLE%
