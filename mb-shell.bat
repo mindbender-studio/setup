@@ -1,6 +1,6 @@
 @echo off
 
-call mb-env
+call %~dp0mb-env
 
 set PROMPT=$$ 
 
