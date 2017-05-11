@@ -1,7 +1,7 @@
 @echo off
 
-set PYTHONPATH=%~dp0git\mindbender-core;%~dp0git\pyblish-base
-set PATH=%~dp0\bin\windows\python36;%PATH%
+call mb-env
+
 set PROMPT=$$ 
 
 call cmd

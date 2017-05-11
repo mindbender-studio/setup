@@ -1,31 +1,14 @@
 @echo off
 
-:: Dependencies
-set PYBLISH_BASE=%~dp0git\pyblish-base
-set PYBLISH_MAYA=%~dp0git\pyblish-maya
-set PYBLISH_NUKE=%~dp0git\pyblish-nuke
-set PYBLISH_QML=%~dp0git\pyblish-qml
-set PYBLISH_LITE=%~dp0git\pyblish-lite
-set MINDBENDER_CORE=%~dp0git\mindbender-core
-set MINDBENDER_LAUNCHER=%~dp0git\mindbender-launcher
-set MINDBENDER_EXAMPLE=%~dp0git\mindbender-example\projects
+:: Establish an environment
+call mb-env
 
-set PATH=%~dp0bin\windows\syncthing;%PATH%
-set PATH=%~dp0bin\windows\python36;%PATH%
-set PATH=%~dp0bin\windows;%PATH%
-set PATH=%~dp0bin;%PATH%
+:: Take the user through initial set-up
+if "%MINDBENDER_MONGO%"=="" call mb-login
 
-set PYTHONPATH=%~dp0bin\maya\2016\pythonpath
-set PYTHONPATH=%MINDBENDER_LAUNCHER%;%PYTHONPATH%
+:: Verify the address given by the user
+cmd /c mb-test
 
-if "%MINDBENDER_PROJECTS%"=="" set MINDBENDER_PROJECTS=%MINDBENDER_EXAMPLE%
+if "%ERRORLEVEL%"=="0" python -u -m launcher --root %MINDBENDER_PROJECTS%
 
-:: ---------------------------------------------------------
-::
-:: Edit here
-::
-:: ---------------------------------------------------------
-
-set PYBLISHGUI=pyblish_qml
-
-python -u -m launcher --root %MINDBENDER_PROJECTS%
+pause
